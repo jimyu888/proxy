@@ -2,12 +2,13 @@
 A proxy demo
 
 # installation and running
-npm install
-npm start
+ npm install
+ npm start
 
 # test
 ## get reqeust
-$ curl http://localhost:8000/proxy/http://httpbin.org/get
+ $ curl http://localhost:8000/proxy/http://httpbin.org/get
+```
 {
   "args": {},
   "headers": {
@@ -18,9 +19,11 @@ $ curl http://localhost:8000/proxy/http://httpbin.org/get
   "origin": "72.142.16.190, 72.142.16.190",
   "url": "https://httpbin.org/get"
 }
+```
 
 ## post request
-$ curl -X POST -d asdf=blah http://localhost:8000/proxy/http://httpbin.org/post
+ $ curl -X POST -d asdf=blah http://localhost:8000/proxy/http://httpbin.org/post
+```
 {
   "args": {},
   "data": "",
@@ -39,7 +42,8 @@ $ curl -X POST -d asdf=blah http://localhost:8000/proxy/http://httpbin.org/post
   "origin": "72.142.16.190, 72.142.16.190",
   "url": "https://httpbin.org/post"
 }
+```
 
 ## invalid reqeust
-$ curl http://localhost:8000/proxaay/http://httpbin.org/get
-^C
+ $ curl http://localhost:8000/proxaay/http://httpbin.org/get
+ ^C
