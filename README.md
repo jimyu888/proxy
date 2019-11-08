@@ -2,12 +2,14 @@
 A proxy demo
 
 # installation and running
- npm install
- npm start
+```
+npm install
+npm start
+```
 
 # test
 ## get reqeust
- $ curl http://localhost:8000/proxy/http://httpbin.org/get
+$ curl http://localhost:8000/proxy/http://httpbin.org/get
 ```
 {
   "args": {},
@@ -22,7 +24,7 @@ A proxy demo
 ```
 
 ## post request
- $ curl -X POST -d asdf=blah http://localhost:8000/proxy/http://httpbin.org/post
+$ curl -X POST -d asdf=blah http://localhost:8000/proxy/http://httpbin.org/post
 ```
 {
   "args": {},
@@ -45,5 +47,7 @@ A proxy demo
 ```
 
 ## invalid reqeust
- $ curl http://localhost:8000/proxaay/http://httpbin.org/get
- ^C
+$ curl http://localhost:8000/proxaay/http://httpbin.org/get
+```
+^C
+```
